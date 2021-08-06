@@ -1,0 +1,73 @@
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body >
+
+    <div id="main">
+      <div class="gameTitle">
+        <h1>TIC TAC TOE</h1>
+      </div>
+
+      <!-- start gameboard -->
+      <div id="game">
+        <div class="column">
+          <!-- boxes 1-3 -->
+          <div class="row grid-line-row">
+            <input type="text" id="b1" onclick=
+            "myfunc_3(); loadGame();" readonly>
+
+            <input type="text" id="b2" onclick=
+            "myfunc_4(); loadGame();" readonly>
+
+            <input type="text" id="b3" onclick=
+            "myfunc_5(); loadGame();" readonly>
+          </div>
+          <!-- boxes 4-6 -->
+          <div class="row grid-line-row">
+            <input type="text" id="b4" onclick=
+            "myfunc_6(); loadGame();" readonly>  
+
+            <input type="text" id="b5" onclick=
+            "myfunc_7(); loadGame();" readonly>
+
+            <input type="text" id="b6" onclick=
+            "myfunc_8(); loadGame();" readonly>
+          </div>
+          <!-- boxes 7-9 -->
+          <div class="row">
+            <input type="text" id="b7" onclick=
+            "myfunc_9(); loadGame();" readonly>
+  
+            <input type="text" id="b8" onclick=
+            "myfunc_10(); loadGame();" readonly>
+  
+            <input type="text" id="b9" onclick=
+            "myfunc_11(); loadGame();" readonly>
+          </div>
+        </div>
+      </div>
+      <!-- end gameboard  -->
+
+      <!-- Button to reset game -->
+        <div>
+          <button id="restart" class="btn-success btn" onclick="myfunc_2()">
+            Restart
+          </button>
+        </div>
+     
+
+      <!-- Current player turn -->
+      <div class="currentPlayer">
+        <p id="print"></p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

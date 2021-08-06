@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+  body {
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    font-family: 'Press Start 2P', cursive;
+  }
+  #main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+  }
+  .gameTitle {
+    margin: 50px auto;
+  }
+  #game {
+    width: 300px;
+    margin: auto;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+  }
+	h1 {
+    text-align: center;
+    font-size: 28px;
+    color: rgb(206, 197, 197);
+    text-shadow: 2px 2px 8px black;
+	} 
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .grid-line-row {
+    border-bottom: 4px solid rgb(37, 37, 37); 
+  }
+
+	/* 3*3 Grid */
+	#b1, #b2, #b3, #b4, #b5,
+	#b6, #b7, #b8, #b9 {   
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    margin: 0;
+    border: none;
+    font-size: 50px;
+    text-align: center;
+    background-color: rgba(187, 181, 181, 0.199);
+  }
+  #b1, #b2, #b4, #b5, #b7, #b8 {
+    border-right: 4px solid rgb(37, 37, 37);
+  }
+
+
+	/* Reset Button */
+	#restart {
+    text-transform: uppercase;
+    padding: 10px 5px;
+    border: yellowgreen solid;
+    background-color: yellowgreen;
+    box-shadow: 2px 2px 5px black;
+		margin: 50px auto;
+		border-radius: 4px;
+		color: white;
+    font-size: 20px;
+    font-family: 'Press Start 2P', cursive;
+		cursor: pointer;
+	}
+
+	/* Player turn indicator */
+	#print {
+		color: dodgerblue;
+    font-size: 20px;
+    text-shadow: 1px 1px 5px black;
+	}
+
+
+
+
+
